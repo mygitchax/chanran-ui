@@ -1,0 +1,68 @@
+<html>
+    <head></head>
+    <body>
+        <!-- form : to submit the data.
+            method = "get | post"
+                get - it is default, using for sending unsecure and small data.
+                post - using for secure and large data.
+            action = 'destination page'
+            name = "form name"
+        -->
+        <form method="get" action="image.html">
+            <table>
+                <tr>
+                    <td>Name</td><td><input type="text" name="name" id="name" value="rathan"></td>
+                </tr>
+                <tr>
+                    <td>Email</td><td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td><td><input type="password" name="pwd" id="pwd"></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td><td><input type="text" name="mobile" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td>message</td><td>
+                        <textarea name="msg" id="msg" cols="30" rows="7"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male <input type="radio" id="male" name="gender" value="male">
+                        Female <input type="radio" id="female" name="gender" value="female">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        Cricket <input type="checkbox" id="crik" name="crik" value="cricket">
+                        Carroms <input type="checkbox" id="carm" name="carm" value="carroms">
+                    </td>
+                </tr>
+                <tr>
+                    <td>state</td>
+                    <td>
+                        <select name="state" id="state">
+                            <option >Select state</option>
+                            <option >AP state</option>
+                            <option >UP state</option>
+                            <option >TS state</option>
+                            <option value="5">MP state</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload</td>
+                    <td><input type="file" id="file" name="file" multiple></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
